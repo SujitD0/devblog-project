@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Success!</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'blog/style.css' %}">
+</head>
+<body>
+    <h1>Thank You!</h1>
+    <p>Your message has been sent successfully.</p>
+    <a href="{% url 'post_list' %}">Back to Home</a>
+</body>
+</html>

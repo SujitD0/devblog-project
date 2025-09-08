@@ -1,0 +1,17 @@
+# Environments
+.env
+venv/
+# Database
+db.sqlite3
+/db.sqlite3-journal
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+media/
+static/
+.DS_Store
+# My OS
+.AppleDouble
+.LSOverride

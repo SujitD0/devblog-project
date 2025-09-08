@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ post.title }}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'blog/style.css' %}">
+</head>
+<body>
+    <article>
+    <h1>{{ post.title }}</h1>
+    <p>by {{ post.author }} on {{ post.created_at }}</p>
+    <hr>
+    <p>{{ post.content|linebreaksbr }}</p>
+</article>
+    <hr>
+<a href="{% url 'post_list' %}">Back to Home</a>
+</body>
+</html>
