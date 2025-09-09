@@ -11,7 +11,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY =  os.environ.get('SECRET_KEY')
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -52,7 +52,7 @@ MIDDLEWARE = [
     
 ]
 
-ROOT_URLCONF = 'devlog.urls'
+ROOT_URLCONF = 'devblog.urls'
 
 TEMPLATES = [
     {
@@ -69,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'devlog.wsgi.application'
+WSGI_APPLICATION = 'devblog.wsgi.application'
 
 
 CORS_ALLOW_ALL_ORIGINS = True

@@ -1,5 +1,5 @@
 """
-ASGI config for devlog project.
+ASGI config for devblog project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'devlog.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'devblog.settings')
 
 application = get_asgi_application()
